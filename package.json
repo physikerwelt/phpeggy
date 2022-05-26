@@ -4,7 +4,7 @@
   "description": "PHP target for Peggy parser generator",
   "main": "src/phpeggy.js",
   "peerDependencies": {
-    "peggy": "^1.2.0"
+    "peggy": "peggyjs/peggy#1.3"
   },
   "devDependencies": {
     "@peggyjs/eslint-config": "^1.0.1",
@@ -13,8 +13,9 @@
     "chai": "^4.3.3",
     "eslint": "^8.11.0",
     "mocha": "^9.1.2",
-    "peggy": "^1.2.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.2",
+    "peggy": "peggyjs/peggy#1.3",
+    "source-map-generator": "^0.8.0"
   },
   "scripts": {
     "build:fixtures": "rm -f test/fixtures/*.php && GENERATE_MISSING_FIXTURES=y npm test",
